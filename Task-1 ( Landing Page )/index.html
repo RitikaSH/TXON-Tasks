@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Home</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-size: 20px;
+        }
+
+        h1{
+            font-family: chiller;
+        }
+
+        h3{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .header{
+            margin:0px;
+        }
+        .header .tophead{
+            margin:0px 10%;
+            background-color: rgb(253, 255, 113);
+            color: black;
+            border-radius: 10px;
+        }
+        .header .tophead p{
+            display: inline-block;
+            margin:3px 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .header .tophead p img{
+            width: 15px;
+            height: 15px;
+            border-radius: 180px;
+        }
+        .header .title{
+            float: left;
+            width: 35%;
+            margin:0px 10%;
+           
+        }
+
+        .header .menu ul{
+            list-style-type: none;
+        }
+
+        .header .menu ul li{
+            float: left;
+        }
+        .header .menu ul li a{
+            display: block;
+            padding:15px 17px;
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+        }
+        .header .menu ul li a:hover{
+            background-image: radial-gradient(rgb(169, 255, 251),rgb(21, 18, 230));
+            font-size: 18px;
+            margin-left: 10px;
+            text-shadow: 1px 2px white;
+        }
+
+        .homeslider{
+            clear: both;
+        }
+
+        .myslide{
+            display: none;
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .myslide div{
+            text-align: center;
+            position: relative;
+            font-size: 150%;
+            top:40%;
+        }
+
+        .myslide div .mb-4{
+            color: #fff;
+            text-shadow: #333 5px 5px 3px;
+        }
+
+        .myslide div p a{
+            text-decoration: none;
+            background-color:rgb(143, 242, 255);
+            padding: 5px 15px;
+            border-radius: 10px;
+            color: rgb(13, 14, 14);
+        }
+        .section1{
+            margin:2% 5%;
+        }
+
+        .section1 .left{
+            width: 54%;
+            float: left;
+            margin-right: 1%;
+        }
+
+        .section2{
+            clear: left;
+            margin:0% 5%;
+        }
+
+        .section2 .artcat{
+            margin-top: 5%;
+            width: 49.8%;
+            margin-right:0.2%;
+            float: left;
+            text-align: center;
+        }
+
+        .section3{
+            clear: both;
+            width: 90%;
+            margin:5%;
+            height: 450px;
+            background-color: rgb(250, 58, 132);
+            text-align: center;
+        }
+
+        .section3 .title{
+            position: relative;
+            top:20%;
+            text-align: center;
+        }
+
+        .section3 .group{
+            position: relative;
+            top:80%;
+            width: 30%;
+            margin:15% 1.6%;
+            margin-bottom: 5%;
+            height: 280px;
+            float: left;
+            box-shadow: 0px 0px 5px 0px;
+        }
+        .section4{
+            margin: 2% 5%;
+            margin-bottom: 50px;
+        }
+
+        .c1{
+            margin: 10px;
+        }
+
+        
+    </style>
+    <script>
+        $(function(){
+            function loop(){
+                $(".c1").animate({top:'toggle'},4000,function(){loop();});
+            }
+            loop();
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="tophead">
+            <p><sapn><img src="images/iconphone.jpg"> 98457 49683</sapn></p>
+            <p><sapn><img src="images/iconemail.png"> rhythmart@gmail.com</sapn></p>
+            <p style="float:right"><sapn><img src="images/iconfacebook.png"></sapn></p>
+            <p style="float:right"><sapn><img src="images/iconinsta.png"></sapn></p>
+            <p style="float:right"><sapn><img src="images/icontwit.png"></sapn></p>
+        </div>
+        <div class="title">
+            <h1>Rhythm Art Gallery</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="artiest.html">Artiest</a></li>
+                <li><a href="exhibition.html">Exhibition</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="homeslider">
+        <div class="myslide" style="background-image: url('images/bg_1.jpg');">
+            <div>
+                <h2>Ideas for Better Arts</h2>
+                <h1 class="mb-4">Creativity done by Brush & Colors</h1>
+                <p><a href="contact.html">Connect with us</a></p>
+            </div>
+        </div>
+
+        <div class="myslide" style="background-image: url('images/bg_2.jpg');">
+            <div>
+                <h2>Ideas for Better Arts</h2>
+                <h1 class="mb-4">Bringing joy of Creativity</h1>
+                <p><a href="contact.html">Connect with us</a></p>
+            </div>
+        </div>
+
+        <div class="myslide" style="background-image: url('images/bg_3.jpg');">
+            <div>
+                <h2>Ideas for Better Arts</h2>
+                <h1 class="mb-4">Art for everyone</h1>
+                <p><a href="contact.html">Connect with us</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section1">
+        <div class="left">
+            <img src="images/about.jpg" width="100%" />
+        </div>
+        <div class="right">
+            <div>
+                <b style="background-color: azure; color: rgb(61, 226, 46); font-size: 30px;">Welcome in Art Gallery</b>
+                <h1>We Provide Best Art</h1>
+            </div>
+            <div class="info">
+                <h3>Painting Art</h3>
+                <p>Painting is the practice of applying paint, pigment, color or other medium to a solid surface</p>
+            </div>
+
+            <div class="info">
+                <h3>Print Art</h3>
+                <p>At its simplest a print is a picture of which more than one copy exists. A painting is a one-off created by hand, whereas prints are usually multiples.</p>
+            </div>
+
+            <div class="info">
+                <h3>Sculpture art</h3>
+                <p>Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="artcat">
+            <h3>Painting</h3>
+            <img src="images/Home/1.jpg" style="width: 100%; height: 400px;" />
+        </div>
+        <div class="artcat">
+            <h3>Printing</h3>
+            <img src="images/i1.jpg" style="width: 100%; height: 400px;" />
+        </div>
+        <div class="artcat">
+            <h3>Sculpture Art</h3>
+            <img src="images/Home/3.jpg" style="width: 100%; height: 400px;" />
+        </div>
+        <div class="artcat">
+            <h3>New Media Art</h3>
+            <img src="images/m1.jpg" style="width: 100%; height: 400px;" />
+        </div>
+    </div>
+
+    <div class="section3">
+        <div class="title">
+            <h1>Glamorous Arts</h1>
+        </div>
+        <div class="imggroup">
+            <div class="group">
+                <img src="images/home/11.jfif" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/12.jfif" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/13.png" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+        </div>
+
+        <div class="imggroup">
+            <div class="group">
+                <img src="images/home/14.jfif" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/15.jpg" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/25.png" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+        </div>
+
+        <div class="imggroup">
+            <div class="group">
+                <img src="images/home/17.jpg" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/18.jfif" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+            <div class="group">
+                <img src="images/home/24.png" style="width: 100%; height: 300px; box-shadow: 8px 8px #333;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="section4" style="clear: both; position: relative; margin-top: 200px;">
+        <h1 style="text-align: center;">Master Piece</h1>
+        <div class="mimg" style="position: relative; width: 100%;">
+            <img class="c1" src="images/about-1.jpg" style="position: relative; width: 30%; height: 350px; top:-5%; left: 5%; box-shadow: 8px 8px;" />
+            <img class="c1" src="images/about-2.jpg" style="position: relative; width: 30%; height: 350px; top:5%; left: 5%; box-shadow: 8px 8px;"/>
+            <img class="c1" src="images/art/masterpiece/m4.jpg" style="position: relative; width: 30%; height: 350px; top:-5%; left: 5%; box-shadow: 8px 8px;"/>
+            <img class="c1" src="images/art/masterpiece/m5.jpg" style="position: relative; width: 30%; height: 350px; top:5%; left: 5%; box-shadow: 8px 8px;"/>
+            <img class="c1" src="images/art/masterpiece/m6.jpg" style="position: relative; width: 30%; height: 350px; top:-5%; left: 5%; box-shadow: 8px 8px;"/>
+            <img class="c1" src="images/art/1.jpg" style="position: relative; width: 30%; height: 350px; top:5%; left: 5%; box-shadow: 8px 8px;"/>
+
+        </div>
+
+    </div>
+
+    <div class="section5" style="clear: both; margin-top:100px; text-align: center; background-color: rgb(73, 72, 72); color:#fff; padding: 20px 0px;">
+        <p>Copyright © 2020 Rhythm Art Gallery India. All Rights Reserved.</p>
+        <p><strong>Designed By :- </strong> Ritwik Malhotra</p>
+    </div>
+
+
+    <script>
+        var si=0;
+        carousel();
+        function carousel(){
+            var i;
+            var x=document.getElementsByClassName("myslide");
+            for(i=0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+            si++;
+            if(si>x.length){
+                si=1;
+            }
+            x[si-1].style.display="block";
+            setTimeout(carousel,5000);
+        }
+
+        var si2=0;
+        carousel2();
+        function carousel2(){
+            var i;
+            var x=document.getElementsByClassName("imggroup");
+            for(i=0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+            si2++;
+            if(si2>x.length)
+            {
+                si2=1;
+            }
+            x[si2-1].style.display="block";
+            setTimeout(carousel2,2000);
+        }
+    </script>
+</body>
+</html>
